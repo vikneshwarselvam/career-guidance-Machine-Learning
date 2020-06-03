@@ -1,0 +1,15 @@
+<html>
+<head>
+     <link href="{{ url_for('static', filename='chart.css') }}" rel="stylesheet" media="all">
+     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+   <br><br> <h1>Machine Learning Output</h1><br><br>
+<div class="graph-cont">
+  <h1>Suggested Job roles</h1><br><br>
+  <div class="bar bar2">{{ job1 }}</div><br>
+     <div class="bar bar3">{{ job2 }}</div><br>
+     <div class="bar bar4">{{ job3 }}</div><br>
+</div>
+</body>
+</html>

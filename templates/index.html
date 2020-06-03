@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="It is a Career Guidance System using Machine Learning">
+    <meta name="author" content="Vikneshwar">
+    <meta name="keywords" content="Career Guidance">
+
+    <!-- Title Page-->
+    <title>Career Guidance</title>
+
+    <!-- Icons font CSS-->
+
+    <link href=" {{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}" rel="stylesheet" media="all">
+
+    <link href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/range.scss') }}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+
+    <link href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}" rel="stylesheet" media="all">
+
+    <link href="{{ url_for('static', filename='vendor/datepicker/daterangepicker.css') }}" rel="stylesheet" media="all">
+      <!-- Main CSS-->
+
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Career Guidance Form</h2>
+                </div>
+                <div class="card-body">
+                    <form action = "http://localhost:5000/result" method="POST">
+                        <div class="form-row m-b-55">
+                            <div class="name">Percentage in Operating Systems</div>
+                            <div class="value">
+                            <div class="input-group">
+                                    <input class="input--style-5" type="text" name="Percentage in Operating Systems">
+                                </div>
+
+                            </div>
+                        </div>
+                         <div class="form-row m-b-55">
+                            <div class="name">Percentage in Algorithms</div>
+                            <div class="value">
+                            <div class="input-group">
+                                    <input class="input--style-5" type="text" name="Percentage in Algorithms">
+                                </div>
+
+                            </div>
+                        </div>
+                         <div class="form-row m-b-55">
+                            <div class="name">Percentage in Programming Concepts</div>
+                            <div class="value">
+                            <div class="input-group">
+                                    <input class="input--style-5" type="text" name="Percentage in Programming Concepts">
+                                </div>
+
+                            </div>
+                        </div>
+                         <div class="form-row m-b-55">
+                            <div class="name">Percentage in Computer Architecture</div>
+                            <div class="value">
+                            <div class="input-group">
+                                    <input class="input--style-5" type="text" name="Percentage in Computer Architecture">
+                                </div>
+
+                            </div>
+                        </div>
+                         <div class="form-row m-b-55">
+                            <div class="name">Percentage in Electronics Subjects</div>
+                            <div class="value">
+                            <div class="input-group">
+                                    <input class="input--style-5" type="text" name="Percentage in Electronics Subjects">
+                                </div>
+
+                            </div>
+                        </div>
+                         <div class="form-row m-b-55">
+                            <div class="name">Percentage in Software Engineering</div>
+                            <div class="value">
+                            <div class="input-group">
+                                    <input class="input--style-5" type="text" name="Percentage in Software Engineering">
+                                </div>
+
+                            </div>
+                        </div>
+                         <div class="form-row m-b-55">
+                            <div class="name">Percentage in Computer Networks</div>
+                            <div class="value">
+                            <div class="input-group">
+                                    <input class="input--style-5" type="text" name="Percentage in Computer Networks">
+                                </div>
+
+                            </div>
+                        </div>
+                         <div class="form-row m-b-55">
+                            <div class="name">Percentage in Mathematics</div>
+                            <div class="value">
+                            <div class="input-group">
+                                    <input class="input--style-5" type="text" name="Percentage in Mathematics">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">Interested career area :</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">System developer
+                                    <input type="radio" checked="checked" name="career" value="1">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Business process analyst
+                                    <input type="radio" name="career" value="2">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Developer
+                                    <input type="radio" name="career" value="3">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Testing
+                                    <input type="radio" name="career" value="4">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Security
+                                    <input type="radio" name="career" value="5">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Cloud computing
+                                    <input type="radio" name="career" value="6">
+                                    <span class="checkmark"></span>
+                                </label>
+
+
+                            </div>
+                        </div>
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">Interested Subjects :</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">Cloud computing
+                                    <input type="radio" checked="checked" name="subject" value="1">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Networks
+                                    <input type="radio" name="subject" value="2">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Computer Architecture
+                                    <input type="radio" name="subject" value="3">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Programming
+                                    <input type="radio" name="subject" value="4">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Parallel computing
+                                    <input type="radio" name="subject" value="5">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Hacking
+                                    <input type="radio" name="subject" value="6">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">IOT
+                                    <input type="radio" name="subject" value="7">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Data engineering
+                                    <input type="radio" name="subject" value="8">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Software Engineering
+                                    <input type="radio" name="subject" value="9">
+                                    <span class="checkmark"></span>
+                                </label><br><br>
+                                <label class="radio-container">Management
+                                    <input type="radio" name="subject" value="10">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">Can you work long time before system?</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">Yes
+                                    <input type="radio" checked="checked" name="long_time_system" value="1">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">No
+                                    <input type="radio" name="long_time_system" value="0">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Logical quotient rating</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="Logical quotient rating">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button class="btn btn--radius-2 btn--red" type="submit" align="center">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+
+
+    <!-- Vendor JS-->
+    <script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
+    <script src=" {{ url_for('static', filename='vendor/datepicker/moment.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/datepicker/daterangepicker.js') }}"></script>
+<script src="{{ url_for('static', filename='js/range.js') }}"></script>
+    <!-- Main JS-->
+    <script src="{{ url_for('static', filename='js/global.js') }}"></script>
+
+</body>
+
+</html>
