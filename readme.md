@@ -12,10 +12,18 @@ The application is hosted in https://careerguidance.herokuapp.com
 
 ## Running locally
 ### Installing requirements
-'''
+```
 pip install -r requirements.txt
-'''
+```
 ### Running the application
-'''
+```
 python main2.py
-'''
+```
+## Running using Docker
+Make sure you have installed docker and docker-compose
+
+```
+sudo docker-compose up
+```
+#### Tested in linux
+The instruction for running in windows may vary 
