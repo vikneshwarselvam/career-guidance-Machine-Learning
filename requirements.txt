@@ -1,7 +1,7 @@
 Flask==1.1.2
 Flask-WTF==0.14.3
 Jinja2==2.11.2	
-numpy==1.18.1
+numpy==1.22.0
 pandas==1.0.0
 Pillow==7.1.1
 python-utils==2.4.0
